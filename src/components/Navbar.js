@@ -10,13 +10,13 @@ const Navbar = () => {
   return (
     <div>
       <header className="">
-        <nav className="container mx-auto py-3">
+        <nav className="container mx-auto py-2">
           <div className="flex items-center justify-between font-semibold text-lg tracking-wider leading-loose text-gray-800">
-            <div className="font-bold text-2xl">
+            <div className="font-bold text-xl">
               <Link to={'/'} className="">Build X</Link>
             </div>
             <div className="hidden md:block">
-              <ul className="flex items-center space-x-12">
+              <ul className="flex items-center space-x-10">
                 {headers.map((header) => (
                   <li key={header.name}>
                     <Link to={header.link} className="">
@@ -26,7 +26,7 @@ const Navbar = () => {
                 ))}
                 <li>
                   <Link to={'/contact'} className="">
-                    <button className="bg-gray-900 text-white p-8 py-6 rounded-2xl text-xl">
+                    <button className="bg-gray-800 text-white p-6 py-4 rounded-2xl text-lg">
                       Contact Us
                     </button>
                   </Link>
