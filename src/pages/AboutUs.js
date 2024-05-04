@@ -33,8 +33,8 @@ const AboutUs = () => {
         <>
             {/* About us */}
             <section className="mb-8">
-                <h1 className="text-gray-700 font-extrabold text-3xl mb-3">About Us</h1>
-                <p className="text-gray-500 text-2xl font-medium leading-8">
+                <h1 className="text-gray-700 font-extrabold text-2xl mb-2">About Us</h1>
+                <p className="text-gray-500 text-lg font-semibold leading-snug">
                     Our story is one of passion, creativity, and relentless pursuite of
                     architectural excellence. Founded on the belief that every space has
                     the potential to inspire and elevate. We embarked on a journey to
@@ -49,10 +49,10 @@ const AboutUs = () => {
 
             {/* Read Our Story */}
             <section className="mb-8">
-                <h1 className="text-gray-700 font-extrabold text-3xl mb-3">
+                <h1 className="text-gray-700 font-extrabold text-2xl mb-2">
                     Read Our Story
                 </h1>
-                <p className="text-gray-500 text-2xl font-medium leading-8">
+                <p className="text-gray-500 text-lg font-semibold leading-snug">
                     Welcome to where innovation meets imagination. As a leading
                     architectural firm, we specialize in crafting spaces that inspire and
                     endure. Our team of passionate designers and engineers is dedicated to
@@ -64,12 +64,12 @@ const AboutUs = () => {
             </section>
 
             {/* Management Team */}
-            <div className="mt-28">
-                <h1 className="text-gray-700 font-extrabold text-3xl mb-3">
+            <div className="mt-20">
+                <h1 className="text-gray-700 font-extrabold text-2xl mb-3">
                     Management Team
                 </h1>
-                <div className="p-10 bg-gray-50  ">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 border-b-3 border-gray-400 pb-8">
+                <div className="p-5 bg-gray-50">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-5 border-b-2 border-gray-400 pb-8">
                         {members.map((member, index) => (
                             // <Member key={member.name} image={member.image} name={member.name} designation={member.designation}/>
                             index < 3 && (<div
@@ -77,16 +77,16 @@ const AboutUs = () => {
                                 className={`bg-gray-50 rounded-lg flex flex-col justify-between text-center`}
                             >
                                 <LazyLoadImage
-                                    className="w-full h-auto mx-auto mt-5 mb-3 max-h-128"
+                                    className="w-full h-auto mb-2 max-h-96"
                                     src={member.image}
                                     alt="management team"
                                 />
-                                <div className="mt-5">
-                                    <div className="text-2xl text-gray-700">
+                                <div className="mt-2">
+                                    <div className="text-xl text-gray-700">
                                         <p className="text-gray-800 font-semibold transition">
                                             {member.name}
                                         </p>
-                                        <p className="text-gray-500 text-xl">
+                                        <p className="text-gray-500 text-base">
                                             {member.designation}
                                         </p>
                                     </div>
@@ -96,8 +96,8 @@ const AboutUs = () => {
                         ))}
                     </div>
                 </div>
-                <div className="p-10 bg-gray-50">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-8 border-b-3 border-gray-400 pb-8">
+                <div className="p-5 bg-gray-50">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-5 border-b-2 border-gray-400 pb-8">
                         {members.map((member, index) => (
                             // <Member key={member.name} image={member.image} name={member.name} designation={member.designation}/>
                             index > 2 && (<div
@@ -105,16 +105,16 @@ const AboutUs = () => {
                                 className={`bg-gray-50 rounded-lg flex flex-col justify-between text-center`}
                             >
                                 <LazyLoadImage
-                                    className="w-full h-auto mx-auto mt-5 mb-3 max-h-128"
+                                    className="w-full h-auto mb-2 max-h-96"
                                     src={member.image}
                                     alt="management team"
                                 />
-                                <div className="mt-5">
-                                    <div className="text-2xl text-gray-700">
+                                <div className="mt-2">
+                                    <div className="text-xl text-gray-700">
                                         <p className="text-gray-800 font-semibold transition">
                                             {member.name}
                                         </p>
-                                        <p className="text-gray-500 text-xl">
+                                        <p className="text-gray-500 text-base">
                                             {member.designation}
                                         </p>
                                     </div>
@@ -127,21 +127,21 @@ const AboutUs = () => {
             </div>
 
             {/* Achievement & Awards */}
-            <div className="my-20">
-                <h1 className="text-gray-700 font-extrabold text-3xl mb-3">
+            <div className="mt-10">
+                <h1 className="text-gray-700 font-bold text-2xl mb-3">
                     Achievement and Awards
                 </h1>
                 <section className="text-white flex gap-5">
-                    <div className="h-60 border-gray-500 w-1/2 relative bg-award1 bg-no-repeat bg-cover bg-center">
-                        <div className="text-2xl absolute left-10 mt-10">
+                    <div className="h-36  w-1/2 relative bg-award1 bg-no-repeat bg-cover bg-center">
+                        <div className="text-xl absolute left-5 mt-5">
                             <h2 className="font-medium">Builders Awards</h2>
-                            <p className="text-xl">2023</p>
+                            <p className="text-lg">2023</p>
                         </div>
                     </div>
-                    <div className="border border-gray-500 w-1/2 bg-award2 bg-no-repeat bg-cover bg-center">
-                        <div className="text-2xl ml-10 mt-10">
+                    <div className=" w-1/2 bg-award2 bg-no-repeat bg-cover bg-center">
+                        <div className="text-xl ml-5 mt-5">
                             <h2 className="font-medium">Builders Awards</h2>
-                            <p className="text-xl">2024</p>
+                            <p className="text-lg">2024</p>
                         </div>
                     </div>
                 </section>
