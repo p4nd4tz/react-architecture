@@ -60,7 +60,7 @@ const Footer = () => {
                             </div>
                             <button
                                 type="button"
-                                className="p-6 text-xl font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit sm:w-full
+                                className="p-4 text-lg font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit sm:w-full
                                         hover:bg-gray-700 focus:outline-none focus:ring-primary-300"
                             >
                                 Send Message
