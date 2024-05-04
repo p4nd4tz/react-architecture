@@ -1,0 +1,99 @@
+import { Outlet } from "react-router-dom";
+
+const headers = [
+  { name: 'About Us' },
+  { name: 'Services' },
+  { name: 'Our Projects' },
+]
+const Navbar = () => {
+  return (
+    <div>
+      <header className="">
+        <nav className="container mx-auto py-3">
+          <div className="flex items-center justify-between font-semibold text-2xl tracking-wider leading-loose text-gray-800">
+            <div className="font-bold text-2xl">
+              <a href="#" className="">Build X</a>
+            </div>
+            <div className="hidden md:block">
+              <ul className="flex items-center space-x-12">
+                {headers.map((header) => (
+                  <li key={header.name}>
+                    <a href="#" className="">
+                      {header.name}
+                    </a>
+                  </li>
+                ))}
+                <li>
+                  <a href="#" className="">
+                    <button className="bg-gray-900 text-white p-8 py-6 rounded-2xl text-xl">
+                      Contact Us
+                    </button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="md:hidden">
+              <button className="outline-none mobile-menu-button">
+                <svg
+                  className="w-8 h-8"
+                  x-show="!showMenu"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="mobile-menu hidden md:hidden">
+            <ul className="mt-4 space-y-4">
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 rounded"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-white bg-gray-900 rounded"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-white bg-gray-900 rounded"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="block px-4 py-2 text-white bg-gray-900 rounded"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div className="py-4">
+          <Outlet />
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default Navbar;
