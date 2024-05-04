@@ -11,7 +11,7 @@ const Navbar = () => {
     <div>
       <header className="">
         <nav className="container mx-auto py-3">
-          <div className="flex items-center justify-between font-semibold text-2xl tracking-wider leading-loose text-gray-800">
+          <div className="flex items-center justify-between font-semibold text-xl tracking-wider leading-loose text-gray-800">
             <div className="font-bold text-2xl">
               <Link to={'/'} className="">Build X</Link>
             </div>
