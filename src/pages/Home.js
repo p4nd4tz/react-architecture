@@ -19,10 +19,10 @@ const Home = () => {
 
                 <div className="relative z-20 max-w-screen-md h-full items-center">
                     <div className="col-span-6 ">
-                        <h1 className="font-extrabold text-7xl mb-8 text-gray-800 tracking-wide">
+                        <h1 className="font-extrabold text-5xl mb-8 text-gray-800 tracking-wide">
                             "Designing Dreams, Building Realities."
                         </h1>
-                        <p className="text-2xl tracking-wide font-medium mb-8 text-gray-600">
+                        <p className="text-xl tracking-wide font-medium mb-8 text-gray-600">
                             Where imagination meets precision in crafting spaces that
                             transcend expectations. With an unwavering commitment to
                             innovation and excellence, we transform visions into tangible
@@ -30,7 +30,7 @@ const Home = () => {
                         </p>
                         <button
                             type="button"
-                            className="p-8 py-6 text-xl font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
+                            className="p-8 py-6 text-lg font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
                                 hover:bg-gray-700 focus:outline-none focus:ring-primary-300"
                         >
                             Contact Us
