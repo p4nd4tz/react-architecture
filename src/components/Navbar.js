@@ -25,11 +25,11 @@ const Navbar = () => {
                   </li>
                 ))}
                 <li>
-                  <a href="#" className="">
+                  <Link to={'/contact'} className="">
                     <button className="bg-gray-900 text-white p-8 py-6 rounded-2xl text-xl">
                       Contact Us
                     </button>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

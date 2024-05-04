@@ -1,6 +1,13 @@
 const Projects = () => {
     return (
         <>
+            <div className="font-semibold text-2xl mb-20">
+                <h1 className="text-3xl text-gray-700 mb-3">Project Page</h1>
+                <p className="text-gray-500 tracking-wide text-2xl">
+                    "Explore our latest projects: where creativity meets functionality in
+                    every detail. Discover innovation and inspiration brought to life."
+                </p>
+            </div>
             <section className="mb-10">
                 <h2 className="font-semibold text-3xl text-gray-800 mb-8">
                     Completed Construction Project
@@ -89,7 +96,7 @@ const Projects = () => {
             {/* ongoing projects */}
             <section className="mt-20">
                 <h2 className="font-semibold text-3xl text-gray-800 mb-8">
-                Ongoing Architectural Projects
+                    Ongoing Architectural Projects
                 </h2>
                 <div className="flex flex-row gap-5">
                     <div
@@ -114,10 +121,8 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-
-
         </>
-    )
-}
+    );
+};
 
 export default Projects;
