@@ -51,9 +51,9 @@ const services = [
 const Services = () => {
     return (
         <>
-            <section className="mb-8">
-                <h1 className="text-gray-700 font-extrabold text-3xl mb-3">Services</h1>
-                <p className="text-gray-500 text-2xl font-medium leading-8">
+            <section className="mb-4">
+                <h1 className="text-gray-700 font-bold text-2xl mb-2">Services</h1>
+                <p className="text-gray-500 text-lg font-semibold leading-snug">
                     Welcome to Our architectural services page, where creativity meets
                     functionality and dreams take shape. At our architectural company, we
                     offer a comprehensive range of services tailored to meet your unique
@@ -64,14 +64,14 @@ const Services = () => {
             </section>
 
             <div className="">
-                <div className="py-8 md:py-16 m-auto">
-                    <div className="space-y-16">
+                <div className="py-6 md:py-12 m-auto">
+                    <div className="space-y-12">
                         {
                             services.map((service, index) => (
-                                <div key={service.name} className={`flex justify-between items-center space-x-8 gap-16 ${index % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
-                                    <div className="w-1/2 space-y-6">
-                                        <h3 className="font-semibold text-gray-800 text-3xl">{service.name}</h3>
-                                        <p className='font-medium text-gray-500 text-2xl tracking-wide leading-9 pr-8'>
+                                <div key={service.name} className={`flex justify-between items-center space-x-6 gap-12 ${index % 2 !== 0 ? 'flex-row-reverse' : ''}`}>
+                                    <div className="w-1/2 space-y-3">
+                                        <h3 className="font-semibold text-gray-800 text-2xl">{service.name}</h3>
+                                        <p className='font-semibold text-gray-500 text-lg pr-6'>
                                             {service.text}
                                         </p>
                                         <Button />
@@ -80,7 +80,7 @@ const Services = () => {
                                         <LazyLoadImage
                                             src={service.image}
                                             alt="Architecture"
-                                            className="max-h-176 rounded-xl w-full"
+                                            className="max-h-128 rounded-xl w-full"
                                         />
                                     </div>
                                 </div>
@@ -100,7 +100,7 @@ const Button = () => {
         <button
             type="button"
             onClick={() => scrollToContactForm()}
-            className="p-8 py-6 text-xl font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
+            className="p-6 py-4 text-base font-medium text-center tracking-wide text-white rounded-xl bg-gray-900 w-fit
         hover:bg-gray-700 focus:outline-none focus:ring-primary-300"
         >
             Contact Us
