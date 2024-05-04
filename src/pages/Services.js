@@ -3,6 +3,7 @@ import building from '../assets/images/pexels-hikaique-65438.jpg';
 import projectmanagement from '../assets/images/pexels-cottonbro-7437488.jpg';
 import construction from '../assets/images/pexels-marosmarkovic-1451416.jpg';
 import { useScroll } from '../context/ScrollContext';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const services = [
     {
@@ -76,7 +77,7 @@ const Services = () => {
                                         <Button />
                                     </div>
                                     <div className="w-1/2">
-                                        <img
+                                        <LazyLoadImage
                                             src={service.image}
                                             alt="Architecture"
                                             className="max-h-176 rounded-xl w-full"
@@ -85,33 +86,6 @@ const Services = () => {
                                 </div>
                             ))
                         }
-                        {/* <div className="flex justify-between items-center space-x-8 gap-10">
-                            <div className="w-1/2 space-y-6">
-                                <h3 className="font-semibold text-gray-800 text-3xl">Architectural Services</h3>
-                                <p className='font-medium text-gray-500 text-2xl tracking-wide leading-9 pr-8'>
-                                    At our architectural company, the Architectural Services
-                                    Department serves as the creative heart, driving the
-                                    realization of innovative designs and visionary solutions.
-                                    With a passion for architectural excellence, creativity, and
-                                    client-centric approach, our department leads the way in
-                                    shaping environment that inspire, engage, and endure.
-                                </p>
-                                <button
-                                    type="button"
-                                    className="p-8 py-6 text-xl font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
-                                        hover:bg-gray-700 focus:outline-none focus:ring-primary-300"
-                                >
-                                    Contact Us
-                                </button>
-                            </div>
-                            <div className="w-1/2">
-                                <img
-                                    src={architecture}
-                                    alt="Architecture"
-                                    className="max-h-176 rounded-xl w-full"
-                                />
-                            </div>
-                        </div> */}
                     </div>
                 </div>
             </div>

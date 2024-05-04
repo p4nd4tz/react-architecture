@@ -1,24 +1,38 @@
+import showcase1 from '../assets/images/pexels-hikaique-65438.jpg';
+import showcase2 from '../assets/images/pexels-scottwebb-532568.jpg'
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const Home = () => {
     return (
         <>
-            <div className="h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
-                <img
-                    src="https://picsum.photos/seed/picsum/1900/850"
-                    className="absolute top-0 left-0 min-h-full ob"
-                    alt=""
+            <div className="relative h-screen overflow-hidden mb-10">
+                <LazyLoadImage src={showcase1}
+                    className="absolute bottom-0 right-0 h-3/4 w-1/2 z-0 rounded-3xl"
+                    alt="Image Alt"
                 />
-                <div className="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center">
-                    <div className="col-span-6">
-                        <h1 className="text-white font-extrabold text-5xl mb-8">
+                <LazyLoadImage src={showcase2}
+                    className="absolute bottom-0 left-0 h-45p w-3/5 -ml-1/3 z-0 rounded-3xl"
+                    alt="Image Alt"
+                />
+                {/* <img src={showcase1} className="absolute bottom-0 right-0 h-3/4 w-1/2 z-0 rounded-3xl" alt={showcase1} loading='lazy' />
+                <img src={showcase2} className="absolute bottom-0 left-0 h-45p w-3/5 -ml-1/3 z-0 rounded-3xl" alt={showcase2} loading='lazy' /> */}
+
+                <div className="relative z-20 max-w-screen-md h-full items-center">
+                    <div className="col-span-6 ">
+                        <h1 className="font-extrabold text-7xl mb-8 text-gray-800 tracking-wide">
                             "Designing Dreams, Building Realities."
                         </h1>
-                        <p className="text-stone-100 text-base">
-                            where imagination meets precision in crafting spaces that
+                        <p className="text-2xl tracking-wide font-medium mb-8 text-gray-600">
+                            Where imagination meets precision in crafting spaces that
                             transcend expectations. With an unwavering commitment to
                             innovation and excellence, we transform visions into tangible
                             structures, shaping environments that inspire and endure.
                         </p>
-                        <button className="mt-8 text-white uppercase py-4 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10">
+                        <button
+                            type="button"
+                            className="p-8 py-6 text-xl font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
+                                hover:bg-gray-700 focus:outline-none focus:ring-primary-300"
+                        >
                             Contact Us
                         </button>
                     </div>
@@ -26,7 +40,7 @@ const Home = () => {
             </div>
 
             {/* company overview  */}
-            <section className="flex flex-wrap mt-10 items-stretch">
+            <section className="flex flex-wrap mt-20 items-stretch">
                 {/* Left side divs */}
                 <div className="md:w-1/2 text-2xl text-gray-600 flex flex-col pr-14 tracking-wider font-medium">
                     <div className="">
@@ -73,16 +87,16 @@ const Home = () => {
                 </div>
                 {/* Right side image */}
                 <div className="w-1/2 flex">
-                    <img
+                    <LazyLoadImage
                         src={require(`../assets/images/bigsmall_Mirvac_house2_twgogv.jpg`)}
-                        className="object-fit  rounded-3xl"
+                        className="object-fit rounded-3xl"
                         alt="pexels-expect-best-79873-323780"
                     />
                 </div>
             </section>
 
             {/* architectural design projects */}
-            <section className="mt-10">
+            <section className="mt-20">
                 <h2 className="font-semibold text-3xl text-gray-800 mb-8">
                     Architectural Design Projects
                 </h2>
@@ -105,7 +119,7 @@ const Home = () => {
             </section>
 
             {/* Building projects */}
-            <section className="mt-10">
+            <section className="mt-20">
                 <h2 className="font-semibold text-3xl text-gray-800 mb-8">
                     Building Projects
                 </h2>
@@ -134,7 +148,7 @@ const Home = () => {
             </section>
 
             {/* people */}
-            <section className="mt-10 flex flex-wrap justify-center gap-10">
+            <section className="mt-20 flex flex-wrap justify-center gap-10">
                 <div className="max-w-md p-8 hover:bg-gray-100 bg-gray-100 h-auto flex flex-col justify-between">
                     <a href="#" className="block">
                         <div className="flex items-center gap-5 mb-5">
@@ -142,6 +156,7 @@ const Home = () => {
                                 className="w-20 h-20 rounded-full"
                                 src={require("../assets/images/pexels-andrewpersonaltraining-697509.jpg")}
                                 alt="Rounded avatar"
+                                loading='lazy'
                             />
                             <div className="flex flex-col">
                                 <h5 className="mb-1 text-3xl font-bold text-gray-800">
@@ -162,10 +177,11 @@ const Home = () => {
                 <div className="max-w-md p-8 hover:bg-gray-100 bg-gray-100 h-auto flex flex-col justify-between">
                     <a href="#" className="block">
                         <div className="flex items-center gap-5 mb-5">
-                            <img
+                            <LazyLoadImage
                                 className="w-20 h-20 rounded-full"
                                 src={require("../assets/images/pexels-pixabay-415829.jpg")}
                                 alt="Rounded avatar"
+                                loading='lazy'
                             />
                             <div className="flex flex-col">
                                 <h5 className="mb-1 text-3xl font-bold text-gray-800">
@@ -186,10 +202,11 @@ const Home = () => {
                 <div className="max-w-md p-8 hover:bg-gray-100 bg-gray-100 h-auto flex flex-col justify-between">
                     <a href="#" className="block">
                         <div className="flex items-center gap-5 mb-5">
-                            <img
+                            <LazyLoadImage
                                 className="w-20 h-20 rounded-full"
                                 src={require("../assets/images/pexels-olly-3763188.jpg")}
                                 alt="Rounded avatar"
+                                loading='lazy'
                             />
                             <div className="flex flex-col">
                                 <h5 className="mb-1 text-3xl font-bold text-gray-800">

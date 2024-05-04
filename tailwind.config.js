@@ -29,6 +29,7 @@ module.exports = {
         'ongoing-6': "url('/src/assets/images/pexels-d123x-783966.jpg')",
       },
       height: {
+        '45p': '45%',
         '112': '28rem',
         '128': '32rem',
         '144': '36rem',
@@ -40,6 +41,7 @@ module.exports = {
         '3': '3px',
       },
       maxHeight: {
+        '45p': '45%',
         '112': '28rem',
         '128': '32rem',
         '144': '36rem',

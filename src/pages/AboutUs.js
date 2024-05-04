@@ -4,28 +4,31 @@ import image3 from "../assets/images/pexels-vinicius-wiesehofer-289347-1130626.j
 import image4 from "../assets/images/pexels-cottonbro-4098157.jpg";
 import image5 from "../assets/images/pexels-anna-nekrashevich-6801642.jpg";
 import image6 from "../assets/images/pexels-danxavier-1239288.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+const members = [
+    {
+        image: image1,
+        name: "Shirley Bismarck",
+        designation: "Director, Architecture",
+    },
+    { image: image2, name: "Megan Kunle", designation: "Engineer" },
+    { image: image3, name: "Abimbola Michael", designation: "Architecture" },
+    {
+        image: image4,
+        name: "Chinonso Blessing",
+        designation: "Senior, Architecture",
+    },
+    { image: image5, name: "Tunde johnson", designation: "Architecture" },
+    {
+        image: image6,
+        name: "Seun Olatunji",
+        designation: "Construction project Manager",
+    },
+];
 
 const AboutUs = () => {
-    const members = [
-        {
-            image: image1,
-            name: "Shirley Bismarck",
-            designation: "Director, Architecture",
-        },
-        { image: image2, name: "Megan Kunle", designation: "Engineer" },
-        { image: image3, name: "Abimbola Michael", designation: "Architecture" },
-        {
-            image: image4,
-            name: "Chinonso Blessing",
-            designation: "Senior, Architecture",
-        },
-        { image: image5, name: "Tunde johnson", designation: "Architecture" },
-        {
-            image: image6,
-            name: "Seun Olatunji",
-            designation: "Construction project Manager",
-        },
-    ];
+
     return (
         <>
             {/* About us */}
@@ -73,7 +76,7 @@ const AboutUs = () => {
                                 key={member.name}
                                 className={`bg-gray-50 rounded-lg flex flex-col justify-between text-center`}
                             >
-                                <img
+                                <LazyLoadImage
                                     className="w-full h-auto mx-auto mt-5 mb-3 max-h-128"
                                     src={member.image}
                                     alt="management team"
@@ -101,7 +104,7 @@ const AboutUs = () => {
                                 key={member.name}
                                 className={`bg-gray-50 rounded-lg flex flex-col justify-between text-center`}
                             >
-                                <img
+                                <LazyLoadImage
                                     className="w-full h-auto mx-auto mt-5 mb-3 max-h-128"
                                     src={member.image}
                                     alt="management team"
