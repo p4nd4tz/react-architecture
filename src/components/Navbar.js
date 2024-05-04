@@ -1,9 +1,10 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import Footer from './Footer'
 
 const headers = [
-  { name: 'About Us' },
-  { name: 'Services' },
-  { name: 'Our Projects' },
+  { name: 'About Us', link: 'about' },
+  { name: 'Services', link: 'services' },
+  { name: 'Our Projects', link: 'projects' },
 ]
 const Navbar = () => {
   return (
@@ -12,15 +13,15 @@ const Navbar = () => {
         <nav className="container mx-auto py-3">
           <div className="flex items-center justify-between font-semibold text-2xl tracking-wider leading-loose text-gray-800">
             <div className="font-bold text-2xl">
-              <a href="#" className="">Build X</a>
+              <Link to={'/'} className="">Build X</Link>
             </div>
             <div className="hidden md:block">
               <ul className="flex items-center space-x-12">
                 {headers.map((header) => (
                   <li key={header.name}>
-                    <a href="#" className="">
+                    <Link to={header.link} className="">
                       {header.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
                 <li>
@@ -88,10 +89,11 @@ const Navbar = () => {
         </nav>
       </header>
       <main>
-        <div className="py-4">
+        <div className="py-8">
           <Outlet />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

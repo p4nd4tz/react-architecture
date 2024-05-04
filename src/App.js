@@ -4,15 +4,21 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Navbar from './features/navbar/Navbar'
-import HomePage from './pages/HomePage'
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import AboutUs from './pages/AboutUs';
+import Services from './pages/Services';
+import Projects from './pages/Projects';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Navbar />,
     children: [
-      {index: true, element: <HomePage />}
+      {index: true, element: <Home />},
+      {path: 'about', element: <AboutUs />},
+      {path: 'services', element: <Services />},
+      {path: 'projects', element: <Projects />},
     ]
   },
 ]);

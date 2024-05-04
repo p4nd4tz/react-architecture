@@ -16,6 +16,8 @@ module.exports = {
         'building-1': "url('/src/assets/images/pexels-brett-sayles-22605332.jpg')",
         'building-2': "url('/src/assets/images/pexels-fotios-photos-2780551.jpg')",
         'building-3': "url('/src/assets/images/pexels-pixabay-236722.jpg')",
+        'award1': "url('/src/assets/images/The-World-Architecture-Awards.webp')",
+        'award2': "url('/src/assets/images/6c6690aa2ef200c1020a9d3a8179c052.jpg')",
       },
       height: {
         '112': '28rem',
@@ -27,6 +29,14 @@ module.exports = {
       },
       borderWidth: {
         '3': '3px',
+      },
+      maxHeight: {
+        '112': '28rem',
+        '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
+        '176': '44rem',
+        '192': '48rem',
       }
     },
   },

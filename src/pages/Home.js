@@ -74,7 +74,7 @@ const Home = () => {
                 {/* Right side image */}
                 <div className="w-1/2 flex">
                     <img
-                        src={require(`../../assets/images/bigsmall_Mirvac_house2_twgogv.jpg`)}
+                        src={require(`../assets/images/bigsmall_Mirvac_house2_twgogv.jpg`)}
                         className="object-fit  rounded-3xl"
                         alt="pexels-expect-best-79873-323780"
                     />
@@ -118,13 +118,13 @@ const Home = () => {
                             <span className="text-2xl">Banana island, Nigeria</span>
                         </div>
                     </div>
-                    <div className="h-160 border w-1/3 rounded-3xl relative bg-building-2 bg-no-repeat bg-cover bg-center">
+                    <div className="h-160 w-1/3 rounded-3xl relative bg-building-2 bg-no-repeat bg-cover bg-center">
                         <div className="absolute bottom-10 left-10 mb-5 text-white">
                             <p className="text-3xl">Shopping Mall</p>
                             <span className="text-2xl">wuse Abuja, Nigeria</span>
                         </div>
                     </div>
-                    <div className="h-160 border w-1/3 rounded-3xl relative bg-building-3 bg-no-repeat bg-cover bg-center">
+                    <div className="h-160 w-1/3 rounded-3xl relative bg-building-3 bg-no-repeat bg-cover bg-center">
                         <div className="absolute bottom-10 left-10 mb-5 text-white">
                             <p className="text-3xl">Oil and Gas Company</p>
                             <span className="text-2xl">Leki phase 2, Lagos State</span>
@@ -140,7 +140,7 @@ const Home = () => {
                         <div className="flex items-center gap-5 mb-5">
                             <img
                                 className="w-20 h-20 rounded-full"
-                                src={require("../../assets/images/pexels-andrewpersonaltraining-697509.jpg")}
+                                src={require("../assets/images/pexels-andrewpersonaltraining-697509.jpg")}
                                 alt="Rounded avatar"
                             />
                             <div className="flex flex-col">
@@ -164,7 +164,7 @@ const Home = () => {
                         <div className="flex items-center gap-5 mb-5">
                             <img
                                 className="w-20 h-20 rounded-full"
-                                src={require("../../assets/images/pexels-pixabay-415829.jpg")}
+                                src={require("../assets/images/pexels-pixabay-415829.jpg")}
                                 alt="Rounded avatar"
                             />
                             <div className="flex flex-col">
@@ -188,7 +188,7 @@ const Home = () => {
                         <div className="flex items-center gap-5 mb-5">
                             <img
                                 className="w-20 h-20 rounded-full"
-                                src={require("../../assets/images/pexels-olly-3763188.jpg")}
+                                src={require("../assets/images/pexels-olly-3763188.jpg")}
                                 alt="Rounded avatar"
                             />
                             <div className="flex flex-col">
@@ -208,91 +208,6 @@ const Home = () => {
                     </a>
                 </div>
             </section>
-
-            {/* footer */}
-            <footer className="mt-10 px-2">
-                <h2 className="font-semibold text-3xl text-gray-800">
-                    Contact Form
-                </h2>
-                {/* contact us */}
-                <div className="flex justify-between">
-                    <section className="bg-white w-1/2">
-                        <div className="py-8">
-                            <form action="#" className="space-y-8">
-                                <div>
-                                    <label
-                                        htmlFor="fullname"
-                                        className="block mb-2 text-xl font-medium text-gray-500"
-                                    >
-                                        Enter Your FullName
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="fullname"
-                                        className="block p-8 w-full text-xl  rounded-2xl border-3 border-gray-300 shadow-sm bg-gray-100"
-                                        placeholder="Enter Full Name"
-                                        required=""
-                                    />
-                                </div>
-                                <div>
-                                    <label
-                                        htmlFor="email"
-                                        className="block mb-2 text-xl font-medium text-gray-500"
-                                    >
-                                        Enter Email Address
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        className="block p-8 w-full text-xl rounded-2xl border-3 border-gray-300 shadow-sm bg-gray-100"
-                                        required=""
-                                        placeholder="Enter Email Address"
-                                    />
-                                </div>
-                                <div className="sm:col-span-2">
-                                    <label
-                                        htmlFor="message"
-                                        className="block mb-2 text-xl font-medium text-gray-500"
-                                    >
-                                        Enter Your Message
-                                    </label>
-                                    <textarea
-                                        id="message"
-                                        rows={6}
-                                        className="block p-8 w-full text-xl rounded-2xl border-3 border-gray-300 shadow-sm bg-gray-100"
-                                        placeholder="Enter Your Message"
-                                        defaultValue={""}
-                                    />
-                                </div>
-                                <button
-                                    type="button"
-                                    className="p-8 text-xl font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit sm:w-full
-                                    hover:bg-gray-700 focus:outline-none focus:ring-primary-300"
-                                >
-                                    Send Message
-                                </button>
-                            </form>
-                        </div>
-                    </section>
-
-                    {/* footer navigation */}
-                    <div className="text-gray-500 font-semibold text-2xl mt-14 max-w-md">
-                        <div className="mb-16 flex flex-col gap-10 ">
-                            <h3 className="leading-8">Email Address: hello@example.com</h3>
-                            <h3 className="leading-8">Phone Number: +17 8658 389 92</h3>
-                            <h3 className="leading-8">Phone Number: +17 8658 389 92</h3>
-                            <h3 className="leading-8">Office Address: Plot 349 Kazado Close, Praire, Texas</h3>
-                        </div>
-                        <div className="flex flex-col gap-10">
-                            <h3>About Us</h3>
-                            <h3>Services</h3>
-                            <h3>Our Projects</h3>
-                            <h3>Contact Us</h3>
-                        </div>
-                    </div>
-
-                </div>
-            </footer>
         </>
     );
 };

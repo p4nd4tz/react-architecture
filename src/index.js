@@ -5,15 +5,18 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { ScrollProvider } from './context/ScrollContext';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    {/* <Provider store={store}> */}
+      <ScrollProvider>
+        <App />
+      </ScrollProvider>
+    {/* </Provider> */}
   </React.StrictMode>
 );
 
