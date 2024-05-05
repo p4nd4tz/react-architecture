@@ -1,129 +1,74 @@
 const Projects = () => {
     return (
         <>
-            <div className="mb-10">
-                <h1 className="text-gray-700 font-bold text-2xl mb-2">Project Page</h1>
-                <p className="text-gray-500 text-lg font-semibold leading-snug">
+            <div className="mb-8">
+                <h1 className="text-gray-700 font-extrabold text-xl md:text-2xl mb-2">Project Page</h1>
+                <p className="text-gray-500 text-base md:text-lg font-semibold leading-snug">
                     "Explore our latest projects: where creativity meets functionality in
                     every detail. Discover innovation and inspiration brought to life."
                 </p>
             </div>
 
-            <section className="mb-10">
+            <section className="mb-8">
                 <h2 className="font-semibold text-2xl text-gray-800 mb-6">
                     Completed Construction Project
                 </h2>
-                <div className="flex flex-row gap-5">
-                    <div
-                        className={`h-128 w-1/3 rounded-3xl relative bg-building-1 bg-no-repeat bg-cover bg-center`}
-                    >
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">8 Bedroom Duplex</p>
-                            <span className="text-lg">Banana island, Nigeria</span>
-                        </div>
-                    </div>
-                    <div className="h-128 w-1/3 rounded-3xl relative bg-building-2 bg-no-repeat bg-cover bg-center">
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">Shopping Mall</p>
-                            <span className="text-lg">wuse Abuja, Nigeria</span>
-                        </div>
-                    </div>
-                    <div className="h-128 w-1/3 rounded-3xl relative bg-building-3 bg-no-repeat bg-cover bg-center">
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">Oil and Gas Company</p>
-                            <span className="text-lg">Leki phase 2, Lagos State</span>
-                        </div>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <Architecture bgImage={'bg-building-1'} name={'8 Bedroom Duplex'} place={'Banana island, Nigeria'} />
+                    <Architecture bgImage={'bg-building-2'} name={'Shopping Mall'} place={'Wuse Abuja, Nigeria'} />
+                    <Architecture bgImage={'bg-building-3'} name={'Oil and Gas Company'} place={'Lekki Phase 2, Lagos State'} />
                 </div>
             </section>
 
-            <section className="mb-10">
+            <section className="mb-8">
                 <h2 className="font-semibold text-2xl text-gray-800 mb-6">
                     Completed Construction Project
                 </h2>
-                <div className="flex flex-row gap-5">
-                    <div
-                        className={`h-128 border w-1/3 rounded-3xl relative bg-building-4 bg-no-repeat bg-cover bg-center`}
-                    >
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">8 Bedroom Duplex</p>
-                            <span className="text-lg">Banana island, Nigeria</span>
-                        </div>
-                    </div>
-                    <div className="h-128 w-1/3 rounded-3xl relative bg-mension bg-no-repeat bg-cover bg-center">
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">6 Bedroom Mension</p>
-                            <span className="text-lg">wuse Abuja, Nigeria</span>
-                        </div>
-                    </div>
-                    <div className="h-128 w-1/3 rounded-3xl relative bg-country-home bg-no-repeat bg-cover bg-center">
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">3 Bedroom country home</p>
-                            <span className="text-lg">Leki phase 2, Lagos State</span>
-                        </div>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <Architecture bgImage={'bg-building-4'} name={'8 Bedroom Duplex'} place={'Banana island, Nigeria'} />
+                    <Architecture bgImage={'bg-mension'} name={'6 Bedroom Mension'} place={'wuse Abuja, Nigeria'} />
+                    <Architecture bgImage={'bg-country-home'} name={'3 Bedroom country home'} place={'Leki phase 2, Lagos State'} />
                 </div>
             </section>
 
-            {/* ongoing projects1 */}
-            <section className="mb-10">
-                <h2 className="font-128 text-2xl text-gray-800 mb-6">
-                    Ongoing Architectural Projects
-                </h2>
-                <div className="flex flex-row gap-5">
-                    <div
-                        className={`h-128 w-1/3 rounded-3xl relative bg-ongoing-1 bg-no-repeat bg-cover bg-center`}
-                    >
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">8 Bedroom Duplex</p>
-                            <span className="text-lg">Banana island, Nigeria</span>
-                        </div>
-                    </div>
-                    <div className="h-128 w-1/3 rounded-3xl relative bg-ongoing-2 bg-no-repeat bg-cover bg-center">
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">6 Bedroom Mension</p>
-                            <span className="text-lg">wuse Abuja, Nigeria</span>
-                        </div>
-                    </div>
-                    <div className="h-128 w-1/3 rounded-3xl relative bg-ongoing-3 bg-no-repeat bg-cover bg-center">
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">3 Bedroom country home</p>
-                            <span className="text-lg">Leki phase 2, Lagos State</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* ongoing projects */}
-            <section className="mb-10">
+            <section className="mb-8">
                 <h2 className="font-semibold text-2xl text-gray-800 mb-6">
-                    Ongoing Architectural Projects
+                Ongoing Architectural Projects
                 </h2>
-                <div className="flex flex-row gap-5">
-                    <div
-                        className={`h-128 w-1/3 rounded-3xl relative bg-ongoing-4 bg-no-repeat bg-cover bg-center`}
-                    >
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">8 Bedroom Duplex</p>
-                            <span className="text-lg">Banana island, Nigeria</span>
-                        </div>
-                    </div>
-                    <div className="h-128 w-1/3 rounded-3xl relative bg-ongoing-5 bg-no-repeat bg-cover bg-center">
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">Warehouse</p>
-                            <span className="text-lg">wuse Abuja, Nigeria</span>
-                        </div>
-                    </div>
-                    <div className="h-128 w-1/3 rounded-3xl relative bg-ongoing-6 bg-no-repeat bg-cover bg-center">
-                        <div className="absolute bottom-10 left-10 mb-3 text-white">
-                            <p className="text-xl font-medium">3 Bedroom country home</p>
-                            <span className="text-lg">Leki phase 2, Lagos State</span>
-                        </div>
-                    </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <Architecture bgImage={'bg-ongoing-1'} name={'8 Bedroom Duplex'} place={'Banana island, Nigeria'} />
+                    <Architecture bgImage={'bg-ongoing-2'} name={'6 Bedroom Mension'} place={'wuse Abuja, Nigeria'} />
+                    <Architecture bgImage={'bg-ongoing-3'} name={'3 Bedroom country home'} place={'Leki phase 2, Lagos State'} />
+                </div>
+            </section>
+
+            <section className="mb-8">
+                <h2 className="font-semibold text-2xl text-gray-800 mb-6">
+                Ongoing Architectural Projects
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <Architecture bgImage={'bg-ongoing-4'} name={'8 Bedroom Duplex'} place={'Banana island, Nigeria'} />
+                    <Architecture bgImage={'bg-ongoing-5'} name={'6 Bedroom Mension'} place={'Warehouse'} />
+                    <Architecture bgImage={'bg-ongoing-6'} name={'3 Bedroom country home'} place={'Leki phase 2, Lagos State'} />
                 </div>
             </section>
         </>
     );
 };
+
+
+const Architecture = ({ bgImage, name, place }) => {
+    return (
+        <div className="mb-5 md:mb-0">
+            <div className={`h-64 md:h-80 lg:h-96 relative rounded-3xl ${bgImage} bg-no-repeat bg-cover bg-center`}>
+                <div className="absolute bottom-5 left-5 text-white">
+                    <p className="text-lg md:text-xl font-semibold">{name}</p>
+                    <span className="text-sm md:text-base">{place}</span>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 
 export default Projects;
