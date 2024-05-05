@@ -8,7 +8,7 @@ const Home = () => {
             <div className="relative min-h-screen overflow-hidden mb-10">
                 <LazyLoadImage
                     src={showcase1}
-                    className="absolute bottom-0 right-0 h-3/5 w-1/2 lg:h-3/4 md:w-1/2 z-0 rounded-3xl"
+                    className="absolute bottom-0 right-0 h-3/5 md:h-3/5 w-1/2 lg:h-3/4 md:w-1/2 z-0 rounded-3xl"
                     alt="Image Alt"
                 />
                 <LazyLoadImage
@@ -19,10 +19,10 @@ const Home = () => {
 
                 <div className="relative z-20 max-w-screen-md md:max-w-screen-lg px-4 md:px-0 h-full flex items-center">
                     <div className="md:col-span-6">
-                        <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 text-gray-800 tracking-wide leading-tight">
+                        <h1 className="font-extrabold text-3xl md:text-4xl lg:text-5xl mb-4 text-gray-800 tracking-wide leading-tight">
                             "Designing Dreams, Building Realities."
                         </h1>
-                        <p className="text-base max-w-md p-0 lg:text-lg tracking-wide font-medium mb-4 text-gray-600">
+                        <p className="sm:text-lg max-w-md p-0 lg:text-lg font-medium mb-4 text-gray-600">
                             Where imagination meets precision in crafting spaces that
                             transcend expectations. With an unwavering commitment to
                             innovation and excellence, we transform visions into tangible
@@ -30,7 +30,7 @@ const Home = () => {
                         </p>
                         <button
                             type="button"
-                            className="p-4  text-base md:text-lg font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
+                            className="p-4 text-base sm:text-lg font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
                     hover:bg-gray-700 focus:outline-none focus:ring-primary-300"
                         >
                             Contact Us
@@ -44,7 +44,7 @@ const Home = () => {
             <section className="mt-10">
                 <div className='flex flex-col md:flex-row '>
                     {/* Left side divs */}
-                    <div className="md:w-1/2 text-lg text-gray-600 flex flex-col pr-0 md:pr-12 font-medium">
+                    <div className="md:w-1/2 sm:text-lg text-gray-600 flex flex-col pr-0 md:pr-12 font-medium">
                         <div className="p-2">
                             <h3 className="text-xl font-semibold mb-2 text-gray-800">
                                 Company Overview
@@ -151,7 +151,7 @@ const Home = () => {
                                     </p>
                                 </div>
                             </div>
-                            <p className="font-semibold text-gray-500 text-lg">
+                            <p className="font-semibold text-gray-500 sm:text-lg">
                                 Blending creativity with practicality to craft spaces that inspire
                                 and endure. With meticulous attention to detail and a commitment
                                 to excellence, we transform visions
@@ -176,7 +176,7 @@ const Home = () => {
                                     </p>
                                 </div>
                             </div>
-                            <p className="font-semibold text-gray-500 text-lg">
+                            <p className="font-semibold text-gray-500 sm:text-lg">
                                 They provide a pathway to realizing your vision. From concept to
                                 construction, our team's expertise ensures seamless execution and
                                 breathtaking results every time.
@@ -201,7 +201,7 @@ const Home = () => {
                                     </p>
                                 </div>
                             </div>
-                            <p className="font-semibold text-gray-500 text-lg">
+                            <p className="font-semibold text-gray-500 sm:text-lg">
                                 Exceptional architectural services! From conceptualization to
                                 completion, their attention to detail and design finesse exceeded
                                 all expectations.
@@ -210,7 +210,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
         </>
     );
 };
