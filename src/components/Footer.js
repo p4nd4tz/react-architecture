@@ -4,7 +4,7 @@ const Footer = () => {
     const { contactFormRef } = useScroll();
 
     return (
-        <footer className="mt-10" ref={contactFormRef}>
+        <footer className="" ref={contactFormRef}>
             <h2 className="font-semibold text-2xl text-gray-800 px-6">Contact Form</h2>
 
             {/* contact us */}

@@ -5,24 +5,24 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const Home = () => {
     return (
         <>
-            <div className="relative min-h-screen overflow-hidden mb-10">
+            <div className="relative h-160 md:min-h-screen overflow-hidden mb-14">
                 <LazyLoadImage
                     src={showcase1}
-                    className="absolute bottom-0 right-0 h-1/2 md:h-3/5 w-1/2 lg:h-3/4 md:w-1/2 z-0 rounded-3xl"
+                    className="absolute bottom-0 right-0 h-1/2 sm:h-3/5 md:h-3/5 lg:h-4/6 xl:h-3/4 w-1/2 md:w-1/2 z-0 rounded-3xl"
                     alt="Image Alt"
                 />
                 <LazyLoadImage
                     src={showcase2}
-                    className="absolute bottom-0 left-0 h-1/3 w-3/5 md:h-45p lg:h-1/2 md:w-3/5 -ml-1/3 z-0 rounded-3xl"
+                    className="absolute bottom-0 left-0 h-1/3 sm:h-2/5 md:h-45p lg:h-2/5 xl:h-1/2 w-2/3 sm:w-3/5 md:w-3/5 -ml-1/3 z-0 rounded-3xl"
                     alt="Image Alt"
                 />
 
-                <div className="relative z-20 max-w-screen-md md:max-w-screen-lg px-4 md:px-0 h-full flex items-center">
+                <div className="relative z-20 max-w-screen-md md:max-w-screen-lg px-4 md:px-0 flex items-center">
                     <div className="md:col-span-6">
-                        <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 text-gray-800 tracking-wide leading-tight">
+                        <h1 className="font-extrabold text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6 text-gray-800 tracking-wide leading-tight">
                             "Designing Dreams, Building Realities."
                         </h1>
-                        <p className="sm:text-lg max-w-md p-0 lg:text-lg font-medium mb-4 text-gray-600">
+                        <p className="sm:text-lg max-w-md md:max-w-screen-sm p-0 lg:text-lg font-medium mb-4 sm:mb-6 text-gray-600">
                             Where imagination meets precision in crafting spaces that
                             transcend expectations. With an unwavering commitment to
                             innovation and excellence, we transform visions into tangible
@@ -30,7 +30,7 @@ const Home = () => {
                         </p>
                         <button
                             type="button"
-                            className="p-4 text-base sm:text-lg font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
+                            className="p-4 sm:text-lg font-medium text-center tracking-wide text-white rounded-2xl bg-gray-900 w-fit
                     hover:bg-gray-700 focus:outline-none focus:ring-primary-300"
                         >
                             Contact Us
@@ -40,7 +40,7 @@ const Home = () => {
             </div>
 
             {/* company overview  */}
-            <section className="mt-10">
+            <section className="mb-14">
                 <div className='flex flex-col md:flex-row '>
                     {/* Left side divs */}
                     <div className="md:w-1/2 sm:text-lg text-gray-600 flex flex-col pr-0 md:pr-12 font-medium">
@@ -92,7 +92,7 @@ const Home = () => {
             </section>
 
             {/* architectural design projects */}
-            <section className="mt-10">
+            <section className="mb-10">
                 <h2 className="font-semibold text-2xl text-gray-800 mb-6">
                     Architectural Design Projects
                 </h2>
@@ -103,7 +103,7 @@ const Home = () => {
             </section>
 
             {/* Building projects */}
-            <section className="mt-10">
+            <section className="mb-10">
                 <h2 className="font-semibold text-2xl text-gray-800 mb-6">
                     Building Projects
                 </h2>
@@ -130,7 +130,7 @@ const Home = () => {
             </section>
 
             {/* people */}
-            <section className="mt-10">
+            <section className="mb-10">
                 <div className=' flex flex-col md:flex-row justify-center md:gap-5'>
                     <div className="w-full md:max-w-xs p-5 bg-gray-50 mb-8 md:mb-0 md:mr-8 h-auto flex flex-col justify-between">
                         <a href="#" className="block">

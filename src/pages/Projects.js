@@ -1,16 +1,16 @@
 const Projects = () => {
     return (
         <>
-            <div className="mb-8">
-                <h1 className="text-gray-700 font-extrabold text-xl md:text-2xl mb-2">Project Page</h1>
-                <p className="text-gray-500 text-base md:text-lg font-semibold leading-snug">
+            <div className="mb-10">
+                <h1 className="text-gray-700 font-bold text-xl md:text-2xl mb-2">Project Page</h1>
+                <p className="text-gray-500 sm:text-lg font-medium">
                     "Explore our latest projects: where creativity meets functionality in
                     every detail. Discover innovation and inspiration brought to life."
                 </p>
             </div>
 
-            <section className="mb-8">
-                <h2 className="font-semibold text-2xl text-gray-800 mb-6">
+            <section className="mb-10">
+                <h2 className="font-bold text-xl md:text-2xl text-gray-800 mb-6">
                     Completed Construction Project
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -20,8 +20,8 @@ const Projects = () => {
                 </div>
             </section>
 
-            <section className="mb-8">
-                <h2 className="font-semibold text-2xl text-gray-800 mb-6">
+            <section className="mb-10">
+                <h2 className="font-bold text-xl md:text-2xl text-gray-800 mb-6">
                     Completed Construction Project
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -31,8 +31,8 @@ const Projects = () => {
                 </div>
             </section>
 
-            <section className="mb-8">
-                <h2 className="font-semibold text-2xl text-gray-800 mb-6">
+            <section className="mb-10">
+                <h2 className="font-bold text-xl md:text-2xl text-gray-800 mb-6">
                 Ongoing Architectural Projects
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -42,8 +42,8 @@ const Projects = () => {
                 </div>
             </section>
 
-            <section className="mb-8">
-                <h2 className="font-semibold text-2xl text-gray-800 mb-6">
+            <section className="mb-10">
+                <h2 className="font-bold text-xl md:text-2xl text-gray-800 mb-6">
                 Ongoing Architectural Projects
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">

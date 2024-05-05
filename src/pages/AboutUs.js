@@ -31,11 +31,11 @@ const AboutUs = () => {
     return (
         <>
             {/* About us */}
-            <section className="mb-8">
-                <h1 className="text-gray-700 font-extrabold text-xl md:text-2xl mb-2">
+            <section className="mb-10">
+                <h1 className="text-gray-700 font-bold text-xl md:text-2xl mb-2">
                     About Us
                 </h1>
-                <p className="text-gray-500 text-base md:text-lg font-semibold leading-snug">
+                <p className="text-gray-500 sm:text-lg font-medium">
                     Our story is one of passion, creativity, and relentless pursuit of
                     architectural excellence. Founded on the belief that every space has
                     the potential to inspire and elevate. We embarked on a journey to
@@ -49,11 +49,11 @@ const AboutUs = () => {
             </section>
 
             {/* Read Our Story */}
-            <section className="mb-8">
-                <h1 className="text-gray-700 font-extrabold text-xl md:text-2xl mb-2">
+            <section className="mb-10">
+                <h1 className="text-gray-700 font-bold text-xl md:text-2xl mb-2">
                     Read Our Story
                 </h1>
-                <p className="text-gray-500 text-base md:text-lg font-semibold leading-snug">
+                <p className="text-gray-500 sm:text-lg font-medium">
                     Welcome to where innovation meets imagination. As a leading
                     architectural firm, we specialize in crafting spaces that inspire and
                     endure. Our team of passionate designers and engineers is dedicated to
@@ -65,8 +65,8 @@ const AboutUs = () => {
             </section>
 
             {/* Management Team */}
-            <div className="sm:mt-20 mb-8">
-                <h1 className="text-gray-700 font-extrabold text-2xl mb-3">
+            <div className="sm:mt-20 mb-10">
+                <h1 className="text-gray-700 font-bold text-2xl mb-3">
                     Management Team
                 </h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
@@ -86,18 +86,18 @@ const AboutUs = () => {
 
 
             {/* Achievement & Awards */}
-            <div className="sm:mt-20 mb-8">
+            <div className="sm:mt-20 mb-10">
                 <h1 className="text-gray-700 font-bold text-2xl mb-3">
                     Achievement and Awards
                 </h1>
                 <section className="text-white flex flex-col sm:flex-row gap-5">
-                    <div className="h-36 sm:h-auto w-full sm:w-1/2 relative bg-award1 bg-no-repeat bg-cover bg-center">
+                    <div className="h-36 sm:h-auto md:h-40 w-full sm:w-1/2 relative bg-award1 bg-no-repeat bg-cover bg-center">
                         <div className="text-xl sm:absolute sm:left-5 sm:mt-5">
                             <h2 className="font-medium">Builders Awards</h2>
                             <p className="text-lg">2023</p>
                         </div>
                     </div>
-                    <div className="h-36 sm:h-auto w-full sm:w-1/2 bg-award2 bg-no-repeat bg-cover bg-center">
+                    <div className="h-36 sm:h-auto md:h-40 w-full sm:w-1/2 bg-award2 bg-no-repeat bg-cover bg-center">
                         <div className="text-xl sm:ml-5 sm:mt-5">
                             <h2 className="font-medium">Builders Awards</h2>
                             <p className="text-lg">2024</p>

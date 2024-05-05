@@ -51,9 +51,9 @@ const services = [
 const Services = () => {
     return (
         <>
-            <section className="mb-8">
-                <h1 className="text-gray-700 font-extrabold text-xl md:text-2xl mb-2">Services</h1>
-                <p className="text-gray-500 text-base md:text-lg font-semibold leading-snug">
+            <section className="mb-10">
+                <h1 className="text-gray-700 font-bold text-xl md:text-2xl mb-2">Services</h1>
+                <p className="text-gray-500 sm:text-lg font-medium">
                     Welcome to Our architectural services page, where creativity meets
                     functionality and dreams take shape. At our architectural company, we
                     offer a comprehensive range of services tailored to meet your unique
@@ -72,10 +72,10 @@ const Services = () => {
                                 }`}
                         >
                             <div className="w-full md:w-1/2 space-y-3">
-                                <h3 className="font-semibold text-gray-800 text-2xl">
+                                <h3 className="font-bold text-gray-800 text-xl md:text-2xl">
                                     {service.name}
                                 </h3>
-                                <p className="font-semibold text-gray-500 text-lg pr-6">
+                                <p className="font-medium text-gray-500 sm:text-lg pr-6">
                                     {service.text}
                                 </p>
                                 <Button />
