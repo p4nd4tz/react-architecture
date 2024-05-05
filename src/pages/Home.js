@@ -8,18 +8,18 @@ const Home = () => {
             <div className="relative min-h-screen overflow-hidden mb-10">
                 <LazyLoadImage
                     src={showcase1}
-                    className="absolute bottom-0 right-0 h-3/5 md:h-3/5 w-1/2 lg:h-3/4 md:w-1/2 z-0 rounded-3xl"
+                    className="absolute bottom-0 right-0 h-1/2 md:h-3/5 w-1/2 lg:h-3/4 md:w-1/2 z-0 rounded-3xl"
                     alt="Image Alt"
                 />
                 <LazyLoadImage
                     src={showcase2}
-                    className="absolute bottom-0 left-0 h-2/5 w-3/5 md:h-45p lg:h-1/2 md:w-3/5 -ml-1/3 z-0 rounded-3xl"
+                    className="absolute bottom-0 left-0 h-1/3 w-3/5 md:h-45p lg:h-1/2 md:w-3/5 -ml-1/3 z-0 rounded-3xl"
                     alt="Image Alt"
                 />
 
                 <div className="relative z-20 max-w-screen-md md:max-w-screen-lg px-4 md:px-0 h-full flex items-center">
                     <div className="md:col-span-6">
-                        <h1 className="font-extrabold text-3xl md:text-4xl lg:text-5xl mb-4 text-gray-800 tracking-wide leading-tight">
+                        <h1 className="font-extrabold text-4xl lg:text-5xl mb-4 text-gray-800 tracking-wide leading-tight">
                             "Designing Dreams, Building Realities."
                         </h1>
                         <p className="sm:text-lg max-w-md p-0 lg:text-lg font-medium mb-4 text-gray-600">
@@ -38,7 +38,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
 
             {/* company overview  */}
             <section className="mt-10">
